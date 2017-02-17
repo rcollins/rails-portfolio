@@ -9,8 +9,36 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="menu col-xs-8">
+				<ul>
+          <li><a href="/">Welcome</a></li>
+          <li><a href="portfolio">Portfolio</a></li>
+          <li><a href="https://medium.com/about-codecademy">Blog</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="name col-xs-4">
+        <h1>Robert Collins</h1>
+      </div>
+  	</div>
+  </div>
+</div><!-- header -->
+  
 <%= yield %>
 
+<div class="footer">
+	<div class="container">
+    <ul class="social_media">
+      <li><a class="github" href="#">Github</a></li>
+      <li><a class="linkedin" href="#">LinkedIn</a></li>
+      <li><a class="twitter" href="#">Twitter</a></li>
+    </ul>
+    <p>&copy; 2017 Robert Collins</p>
+  </div>
+</div><!-- footer -->
 </body>
 </html>
